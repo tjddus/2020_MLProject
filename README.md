@@ -20,7 +20,7 @@
 
    - classifier 구조
 
-   <img src="https://user-images.githubusercontent.com/30233659/111041125-12ba2e00-847a-11eb-809a-6dced8950842.png" width="70%" height="70%">
+   <img src="https://user-images.githubusercontent.com/30233659/111041130-18b00f00-847a-11eb-87ca-3c40a4281f35.png" width="70%" height="70%">
 
 ## 시도 및 분석
 
@@ -29,6 +29,7 @@ Batch size를 8, 16, 32로 나누어서 학습을 진행했다. 32가 학습속�
 
 #### try2. Autoencoder + classifier
  처음 Autoencoder를 진행하고 나서의 이미지 복원 상태입니다. 이후 최종 모델을 autoencoder+classifier를 합친 새로운 모델을 제시했습니다.
+ 
    <img src="https://user-images.githubusercontent.com/30233659/111041137-1f3e8680-847a-11eb-9ef1-9d58eba663f5.png" width="70%" height="70%">
 
 #### try3. 전이학습, Autoencoder의 encoder 가중치를 classifier 가중치에 적용
@@ -36,6 +37,7 @@ Autoencoder를 통해 pre-trained된 autoencoder의 앞단을 그대로 classifi
 
 #### try4. 성능확인, 분류갯수 48에서 3명으로 줄여 진행
 분류갯수가 48명으로 많다보니 모델의 정확도가 전혀 나오질 않아서 3명으로 줄여서 진행했다.
+
    <img src="https://user-images.githubusercontent.com/30233659/111041158-35e4dd80-847a-11eb-8c1d-000893469a26.png" width="70%" height="70%">
    
    <img src="https://user-images.githubusercontent.com/30233659/111041161-3b422800-847a-11eb-9835-1d784d72dc11.png" width="70%" height="70%">

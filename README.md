@@ -9,7 +9,7 @@
 그래서 과연 Convolution network가 이 둘의 색감이나 스타일의 특징을 잘 추출하여 서로 다른 화가가 그린 그림 이라고 분류할 수 있는지가 궁금했다. 우선 이번 프로젝트의 과업은 분류(classifier)가 중점이다. 그래서 imagenet 분류에 중점에 맞춘 연구가 있다. 또한 이번 프로젝트와 autoencoder model 설계에 도움이 된 neural style transfer에 관한 연구가 있다.
 
 ## 필요한 라이브러리
-  * python
+  * python (>= 3.3)
   * pytorch
 
 ## 제안 모델

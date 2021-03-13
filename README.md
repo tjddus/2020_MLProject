@@ -5,7 +5,8 @@
  기존에는 Resnet, Vggnet 등의 여러 학습 모델이 개미, 벌과 같이 무언가 형상을 띠는 image를 분류하는 연구가 많이 나왔다. 하지만 style, texture를 분류해주는 딥러닝 모델은 존재하지 않는다. **style, texture를 분류한다는 말이 이상할 수 있지만 우리는 앤디워홀의 작품과 반 고흐의 작품이 서로 다르다고 분류**할 수 있다. 물론 개미, 벌과 같이 형상으로 정의할 수 없지만 그 둘 작품의 색감이나 스타일이 다르다는 것은 느낄 수 있다. 
  
   <img src="https://user-images.githubusercontent.com/30233659/111041109-0209b800-847a-11eb-8783-5c7484f20542.png" width="50%" height="50%">
-그래서 과연 **Convolution network가 이 둘의 색감이나 스타일의 특징을 잘 추출하여 서로 다른 화가가 그린 그림**이라고 분류할 수 있는지가 궁금했다. 우선 이번 프로젝트의 과업은 분류(classifier)가 중점이다. 그래서 imagenet 분류에 중점에 맞춘 연구가 있다. 또한 이번 프로젝트와 autoencoder model 설계에 도움이 된 neural style transfer에 관한 연구가 있다.
+  
+그래서 과연 Convolution network가 이 둘의 색감이나 스타일의 특징을 잘 추출하여 서로 다른 화가가 그린 그림 이라고 분류할 수 있는지가 궁금했다. 우선 이번 프로젝트의 과업은 분류(classifier)가 중점이다. 그래서 imagenet 분류에 중점에 맞춘 연구가 있다. 또한 이번 프로젝트와 autoencoder model 설계에 도움이 된 neural style transfer에 관한 연구가 있다.
 
 ## 필요한 라이브러리
   * python

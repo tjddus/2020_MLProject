@@ -13,7 +13,7 @@
   * pytorch
 
 ## 제안 모델
-  명화 분류 프로젝트로 변화를 주면서 neural style transfer net에 변형을 주어 autoencoder를 구현하고자 했다. 이번 프로젝트는 크게 **autoencoder와 classifier** 부분으로 나누어 모델을 설계하였다. 명화분류는 Imagenet과 다른 모델로 접근할 필요성을 느꼈다. 사람의 특징 추출에 있어서는 convolution layer를 거듭할수록 귀와 같은 고차원의 특징이 추출되는데 이런 **화가의 명화의 경우 어떤 특징이 추출될지는 전혀 알 수 없기에 색감, 스타일, 이미지를 rare event로 판단하고 autoencoder**를 이용해 잘 압축된 데이터를 얻으려고 했다. 처음 **autoencoder로 학습된 모델의 앞단인 encoder와 redisual layer를 그대로 가지고 와서 classifier의 이미지 특징 추출 부분**으로 사용하고 이후 fully connected layer를 두어 화가를 분류시켰다.
+  명화 분류 프로젝트로 변화를 주면서 neural style transfer net에 변형을 주어 autoencoder를 구현하고자 했다. 이번 프로젝트는 크게 **autoencoder와 classifier** 부분으로 나누어 모델을 설계하였다. 명화분류는 Imagenet과 다른 모델로 접근할 필요성을 느꼈다. 사람의 특징 추출에 있어서는 convolution layer를 거듭할수록 귀와 같은 고차원의 특징이 추출되는데 이런 **화가의 명화의 경우 어떤 특징이 추출될지는 전혀 알 수 없기에 색감, 스타일, 이미지를 rare event로 판단하고 autoencoder**를 이용해 잘 압축된 데이터를 얻으려고 했다. 처음 **autoencoder로 학습된 모델의 앞단인 encoder와 residual layer를 그대로 가지고 와서 classifier의 이미지 특징 추출 부분**으로 사용하고 이후 fully connected layer를 두어 화가를 분류시켰다.
    - autoencoder 구조
 
    <img src="https://user-images.githubusercontent.com/30233659/111041125-12ba2e00-847a-11eb-809a-6dced8950842.png" width="70%" height="70%">
